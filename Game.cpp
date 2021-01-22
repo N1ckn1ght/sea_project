@@ -46,7 +46,7 @@ void interact_place(Field& field, vector <Ship>& ships) {
 		}
 		else if (spoint.size() == 3) {
 			if (spoint[0] >= 'A' && spoint[0] <= 'J' && spoint[1] == '1' && spoint[2] == '0') {
-				ny = spoint[0] = 'A';
+				ny = spoint[0] - 'A';
 				nx = 10;
 			}
 			else {
